@@ -1,5 +1,5 @@
 import { Button, Section, Text } from '@/app/components';
-import { Flex } from 'styled-system/jsx';
+import { Box, Flex } from 'styled-system/jsx';
 import { FC } from 'react';
 import { contactInfo } from '@/app/data';
 import Link from 'next/link';
@@ -10,14 +10,14 @@ export interface IntroProps {}
 export const Intro: FC<IntroProps> = () => {
     return (
         <Section id="intro" variant="standard">
-            <Flex direction={'column'} gap={'3'} alignItems={'center'}>
-                <Text as={'h3'} fontSize={{ base: 'md' }}>
+            <Flex direction={'column'} alignItems={'center'}>
+                <Text as={'h3'} textStyle={'body'}>
                     Hello I'm
                 </Text>
-                <Text as={'h1'} fontSize={{ base: '2xl', lg: '4xl' }}>
+                <Text as={'h1'} textStyle={'title'} mb={'2'}>
                     {contactInfo.name}
                 </Text>
-                <Text as={'h2'} fontSize={{ base: 'xl' }}>
+                <Text as={'h2'} textStyle={'sub-title'}>
                     {contactInfo.role}
                 </Text>
             </Flex>
@@ -35,10 +35,28 @@ export const Intro: FC<IntroProps> = () => {
             </Flex>
             <Flex my={'8'} gap={'8'}>
                 <Link href={contactInfo.githubProfile}>
-                    <GithubIcon />
+                    <Box
+                        borderRadius={'full'}
+                        _hover={{ backgroundColor: 'fg.default', color: 'bg.canvas' }}
+                        p={'4'}
+                        transitionProperty={'all'}
+                        transitionTimingFunction={'ease-in-out'}
+                        transitionDuration={'normal'}
+                    >
+                        <GithubIcon size={32} />
+                    </Box>
                 </Link>
                 <Link href={contactInfo.linkedIn}>
-                    <LinkedinIcon />
+                    <Box
+                        borderRadius={'full'}
+                        _hover={{ backgroundColor: 'fg.default', color: 'bg.canvas' }}
+                        p={'4'}
+                        transitionProperty={'all'}
+                        transitionTimingFunction={'ease-in-out'}
+                        transitionDuration={'normal'}
+                    >
+                        <LinkedinIcon size={32} />
+                    </Box>
                 </Link>
             </Flex>
         </Section>
