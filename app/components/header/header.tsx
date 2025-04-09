@@ -11,7 +11,7 @@ export const Header: FC<HeaderProps> = (props) => {
         <Flex className={headerStyles} {...props}>
             <Container className={headerContainerStyles}>
                 <HeaderLogo />
-                <HeaderLinks />
+                <HeaderLinks display={{ base: 'none', md: 'flex' }} />
             </Container>
         </Flex>
     );
