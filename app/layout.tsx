@@ -24,9 +24,9 @@ export const metadata: Metadata = {
         images: [
             {
                 url: 'https://neelchitre.vercel.app/og_image.png',
-                width: 800,
-                height: 800,
-                alt: 'Neel Chitre Profile Image'
+                width: 1280,
+                height: 832,
+                alt: 'About Neel Chitre'
             }
         ],
         type: 'website'
