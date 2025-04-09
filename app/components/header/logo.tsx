@@ -1,12 +1,12 @@
-import Link from 'next/link';
+import Link, { LinkProps } from 'next/link';
 import { FC } from 'react';
 import { Text } from '../ui';
 
-export interface HeaderLogoProps {}
+export interface HeaderLogoProps extends LinkProps {}
 
-export const HeaderLogo: FC<HeaderLogoProps> = () => {
+export const HeaderLogo: FC<HeaderLogoProps> = (props) => {
     return (
-        <Link href="/#intro">
+        <Link {...props}>
             <Text textStyle={'logo'}>Neel Chitre</Text>
         </Link>
     );
