@@ -17,5 +17,11 @@ export const textStyles = defineTextStyles({
         value: {
             fontSize: 'md'
         }
+    },
+    logo: {
+        value: {
+            fontSize: 'xl',
+            fontWeight: 'medium'
+        }
     }
 });
