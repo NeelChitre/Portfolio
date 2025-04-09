@@ -1,6 +1,6 @@
 import { Section, Text } from '@/app/components';
 import { contactInfo } from '@/app/data';
-import { LinkedinIcon, MailIcon } from 'lucide-react';
+import { LinkedinIcon, MailIcon, PhoneIcon } from 'lucide-react';
 import Link from 'next/link';
 import { FC } from 'react';
 import { Flex } from 'styled-system/jsx';
@@ -39,6 +39,12 @@ export const Contact: FC<ContactProps> = () => {
                     <Flex alignItems={'center'} gap={'2'}>
                         <LinkedinIcon />
                         <Text>LinkedIn</Text>
+                    </Flex>
+                </Link>
+                <Link href={`tel:${contactInfo.mobile}`} target="_blank">
+                    <Flex alignItems={'center'} gap={'2'}>
+                        <PhoneIcon />
+                        <Text>{contactInfo.mobile}</Text>
                     </Flex>
                 </Link>
             </Flex>
