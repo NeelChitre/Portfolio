@@ -1,6 +1,5 @@
-import { css } from 'styled-system/css';
-import { Container, Flex, FlexProps } from 'styled-system/jsx';
 import { FC } from 'react';
+import { Container, Flex, FlexProps } from 'styled-system/jsx';
 import { HeaderLinks } from '../header/header-links';
 import { Text } from '../ui';
 
