@@ -7,7 +7,7 @@ import neutral from '@park-ui/panda-preset/colors/neutral';
 export default defineConfig({
     // Whether to use css reset
     preflight: true,
-    presets: [createPreset({ accentColor: neutral, grayColor: neutral, radius: 'sm' })],
+    presets: [createPreset({ accentColor: neutral, grayColor: neutral, radius: '2xl' })],
 
     // Where to look for your css declarations
     include: ['./app/**/*.{js,jsx,ts,tsx}'],
@@ -43,7 +43,23 @@ export default defineConfig({
                     }
                 }
             },
-            textStyles
+            textStyles,
+            recipes: {
+                button: {
+                    variants: {
+                        variant: {
+                            solid: {
+                                backgroundColor: '{colors.fg.default}',
+                                color: '{colors.bg.canvas}',
+                                _hover: {
+                                    backgroundColor: 'black',
+                                    color: '{colors.fg.default}'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
 
