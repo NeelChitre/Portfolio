@@ -36,7 +36,6 @@ export const Projects: FC<ProjectsProps> = () => {
                         name={project.name}
                         slug={project.slug}
                         githubRepoLink={project.githubLink}
-                        playableLink={project.playableLink}
                         thumbnail={project.thumbnail}
                         key={`${project.slug}_${index}`}
                     />

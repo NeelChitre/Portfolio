@@ -11,18 +11,11 @@ import { GithubIcon, InfoIcon } from 'lucide-react';
 export interface ProjectCardProps {
     thumbnail?: string;
     githubRepoLink: string;
-    playableLink?: string;
     name: string;
     slug: string;
 }
 
-export const ProjectCard: FC<ProjectCardProps> = ({
-    thumbnail,
-    githubRepoLink,
-    playableLink,
-    name,
-    slug
-}) => {
+export const ProjectCard: FC<ProjectCardProps> = ({ thumbnail, githubRepoLink, name, slug }) => {
     return (
         <Flex
             alignItems={'center'}
