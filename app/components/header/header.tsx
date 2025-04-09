@@ -21,7 +21,9 @@ const headerStyles = css({
     position: 'fixed',
     top: 0,
     width: 'full',
-    zIndex: 'sticky'
+    zIndex: 'sticky',
+    backdropFilter: 'auto',
+    backdropBlur: 'sm'
 });
 
 const headerContainerStyles = css({
