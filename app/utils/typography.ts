@@ -4,7 +4,7 @@ import { defineTextStyles } from '@pandacss/dev';
 export const textStyles = defineTextStyles({
     title: {
         value: {
-            fontSize: { base: '2xl', lg: '4xl' },
+            fontSize: { base: '3xl', lg: '5xl' },
             fontWeight: 'semibold'
         }
     },
