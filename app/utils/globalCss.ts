@@ -2,9 +2,9 @@ import { defineGlobalStyles } from '@pandacss/dev';
 
 export const globalCss = defineGlobalStyles({
     body: {
-        background: 'black',
-        color: 'white',
-        lineHeight: '1.2',
+        backgroundColor: '{colors.bg.canvas}',
+        color: '{colors.fg.default}',
+        lineHeight: '1.4',
         fontFamily: 'poppins',
         overflowX: 'hidden'
     }
