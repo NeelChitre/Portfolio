@@ -1,9 +1,13 @@
 import { defineConfig } from '@pandacss/dev';
 import { textStyles, globalCss } from '@/app/utils';
+import { createPreset } from '@park-ui/panda-preset';
+// @ts-ignore
+import neutral from '@park-ui/panda-preset/colors/neutral';
 
 export default defineConfig({
     // Whether to use css reset
     preflight: true,
+    presets: [createPreset({ accentColor: neutral, grayColor: neutral, radius: 'sm' })],
 
     // Where to look for your css declarations
     include: ['./app/**/*.{js,jsx,ts,tsx}'],
@@ -31,11 +35,6 @@ export default defineConfig({
                 fonts: {
                     poppins: {
                         value: 'var(--font-poppins), sans-serif'
-                    }
-                },
-                zIndex: {
-                    sticky: {
-                        value: 1000
                     }
                 },
                 sizes: {
