@@ -14,6 +14,6 @@ export const experience: IExperience[] = [
     {
         role: 'Indie Game Developer',
         time: 'January 2025 - Present',
-        organization: 'Subculture Studios'
+        organization: 'Freelance'
     }
 ];
