@@ -37,6 +37,7 @@ export const projectsData: IProject[] = [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
         slug: 'cbb',
         githubLink: 'https://github.com/NeelChitre/Chitale-Bakarwadi-Blitz.git',
+        playableLink: 'https://discord.com/channels/@me/673577819850145793/1359241604216651776',
         thumbnail: 'https://picsum.photos/500/400',
         pictures: [
             'https://picsum.photos/500/400',
