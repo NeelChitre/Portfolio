@@ -8,10 +8,10 @@ export interface HeaderLinksProps extends FlexProps {}
 export const HeaderLinks: FC<HeaderLinksProps> = (props) => {
     return (
         <Flex className={headerLinksStyles} {...props}>
-            <Link href={'#about'}>About</Link>
-            <Link href={'#experience'}>Experience</Link>
-            <Link href={'#projects'}>Projects</Link>
-            <Link href={'#contact'}>Contact</Link>
+            <Link href={'/#about'}>About</Link>
+            <Link href={'/#experience'}>Experience</Link>
+            <Link href={'/#projects'}>Projects</Link>
+            <Link href={'/#contact'}>Contact</Link>
         </Flex>
     );
 };
