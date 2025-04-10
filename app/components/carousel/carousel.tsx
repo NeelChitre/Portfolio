@@ -46,7 +46,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
                 </div>
 
                 <div className="embla__dots">
-                    {scrollSnaps.map((_: any, index: number) => (
+                    {scrollSnaps.map((_, index: number) => (
                         <DotButton
                             key={index}
                             onClick={() => onDotButtonClick(index)}
