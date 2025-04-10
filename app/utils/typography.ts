@@ -10,7 +10,7 @@ export const textStyles = defineTextStyles({
     },
     'sub-title': {
         value: {
-            fontSize: 'xl'
+            fontSize: { base: 'xl', lg: '2xl' }
         }
     },
     body: {
