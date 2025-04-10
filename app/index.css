@@ -1,4 +1,5 @@
 @layer reset, base, tokens, recipes, utilities;
+@import './embla.css';
 
 @layer base {
     html {
