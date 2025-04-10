@@ -33,6 +33,7 @@ export const EmblaCarousel: React.FC<PropType> = (props) => {
                                 alt="Game preview image"
                                 width={500}
                                 height={400}
+                                quality={100}
                             />
                         </div>
                     ))}
