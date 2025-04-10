@@ -5,6 +5,6 @@ export interface IProject {
     slug: string;
     githubLink: string;
     playableLink?: string;
-    thumbnail?: string;
-    pictures?: string[];
+    thumbnail: string;
+    pictures: string[];
 }
