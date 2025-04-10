@@ -1,4 +1,4 @@
-import { Section, Text } from '@/app/components';
+import { Section } from '@/app/components';
 import { projectsData } from '@/app/data';
 import { Flex } from '@/styled-system/jsx';
 import { notFound } from 'next/navigation';

@@ -1,13 +1,13 @@
 'use client';
 
+import { IProject } from '@/app/utils';
+import { InfoIcon, PlayIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FC } from 'react';
 import { css } from 'styled-system/css';
 import { Flex } from 'styled-system/jsx';
 import { Button, Text } from '../ui';
-import { GithubIcon, InfoIcon, PlayIcon } from 'lucide-react';
-import { IProject } from '@/app/utils';
 
 export interface ProjectCardProps extends Partial<IProject> {}
 
