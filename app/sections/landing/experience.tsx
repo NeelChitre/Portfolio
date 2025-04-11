@@ -14,7 +14,7 @@ export const Experience: FC<ExperienceProps> = () => {
                     What I've been doing
                 </Text>
                 <Text as={'h1'} textStyle={'title'}>
-                    Expericence
+                    Experience
                 </Text>
             </Flex>
             <Flex justifyContent={'center'} flexWrap={'wrap'} gap={'4'} my={'12'}>
