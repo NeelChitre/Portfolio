@@ -18,7 +18,17 @@ export const ProjectInfo: FC<ProjectInfoProps> = ({
             <Text textStyle={'title'} mb={'8'}>
                 {name}
             </Text>
-            <Text as={'p'}>{description}</Text>
+            {typeof description === 'string' ? (
+                <Text as={'p'}>{description}</Text>
+            ) : (
+                <Flex direction={'column'} gap={'4'}>
+                    {description?.map((d, i) => (
+                        <Text as={'p'} key={i}>
+                            {d}
+                        </Text>
+                    ))}
+                </Flex>
+            )}
 
             <Flex my={'8'} gap={'8'} alignItems={'center'}>
                 {playableLink && (
