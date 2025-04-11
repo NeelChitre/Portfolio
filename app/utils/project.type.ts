@@ -1,6 +1,6 @@
 export interface IProject {
     name: string;
-    description?: string;
+    description?: string[] | string;
     video?: string;
     slug: string;
     githubLink: string;
